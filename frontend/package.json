@@ -1,0 +1,96 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "homepage": "https://g37.osher.dev",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.53",
+    "@react-google-maps/api": "^1.9.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "autosuggest-highlight": "^3.1.1",
+    "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "connected-react-router": "^6.6.1",
+    "lodash": "^4.17.15",
+    "material-ui-image": "^3.2.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "lint": "npm run lint:js && npm run lint:style",
+    "lint:fix": "npm run lint:js:fix && npm run lint:style:fix",
+    "lint:js": "eslint . --ignore-path .gitignore --ext .js,.jsx",
+    "lint:js:staged": "eslint --ignore-path .gitignore",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:style": "stylelint --ignore-path .gitignore \"src/**.*scss\" \"src/**.*sass\" \"src/**.*css\"",
+    "lint:style:staged": "stylelint --ignore-path .gitignore",
+    "lint:style:fix": "npm run lint:style -- --fix",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:watch": "npm run test -- --watchAll --runInBand",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build -- --prod",
+    "deploy": "gh-pages -d build --repo https://github.com/aaronosher/g52grp_team_37_project.git"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-jsdoc": "^21.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "gh-pages": "^2.2.0",
+    "husky": "^4.2.5",
+    "jest-junit": "^10.0.0",
+    "jest-mock-axios": "^4.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^1.19.1",
+    "react-test-render": "^1.1.2",
+    "redux-mock-store": "^1.5.4",
+    "stylelint": "^13.0.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-junit-formatter": "^0.2.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "npm run lint:js:staged"
+    ],
+    "*.{css,scss,sass}": [
+      "npm run lint:style:staged"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

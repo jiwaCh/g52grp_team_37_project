@@ -1,0 +1,14 @@
+{
+  "name": "sirireadwriter",
+  "version": "1.0.0",
+  "description": "Posts and recieves SIRI xml files for live travel data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "xmlbuilder": "^14.0.0"
+  }
+}

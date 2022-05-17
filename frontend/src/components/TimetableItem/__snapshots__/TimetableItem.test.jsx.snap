@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<WithStyles(ForwardRef(ListItem))
+  className=""
+  dense={true}
+>
+  <WithStyles(ForwardRef(ListItemAvatar))>
+    <WithStyles(ForwardRef(Avatar))
+      className="makeStyles-lineColor-2"
+    >
+      31
+    </WithStyles(ForwardRef(Avatar))>
+  </WithStyles(ForwardRef(ListItemAvatar))>
+  <WithStyles(ForwardRef(ListItemText))
+    primary="Victora Centre"
+    secondary="20:20"
+  />
+</WithStyles(ForwardRef(ListItem))>
+`;

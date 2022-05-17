@@ -1,0 +1,13 @@
+# Configs
+!.eslintrc.js
+!.prettierrc.js
+!jest.config.js
+
+node_modules/
+
+# Test Artifacts
+junit.xml
+coverage/
+
+.env
+*.log

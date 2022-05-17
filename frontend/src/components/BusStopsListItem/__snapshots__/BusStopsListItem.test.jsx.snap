@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<WithStyles(ForwardRef(ListItem))
+  button={true}
+  className=""
+  component={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "NavLink",
+      "propTypes": Object {
+        "activeClassName": [Function],
+        "activeStyle": [Function],
+        "aria-current": [Function],
+        "className": [Function],
+        "exact": [Function],
+        "innerRef": [Function],
+        "isActive": [Function],
+        "location": [Function],
+        "onClick": [Function],
+        "replace": [Function],
+        "strict": [Function],
+        "style": [Function],
+        "target": [Function],
+        "to": [Function],
+      },
+      "render": [Function],
+    }
+  }
+  key="1234"
+  to="/busStop?stop=1234"
+>
+  <WithStyles(ForwardRef(ListItemIcon))>
+    <LocationOnIcon />
+  </WithStyles(ForwardRef(ListItemIcon))>
+  <WithStyles(ForwardRef(ListItemText))
+    primary="Some stop"
+    secondary={
+      <span
+        className="makeStyles-chipRoot-2"
+      />
+    }
+  />
+</WithStyles(ForwardRef(ListItem))>
+`;

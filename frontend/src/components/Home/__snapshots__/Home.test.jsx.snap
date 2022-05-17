@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<Fragment>
+  <Container>
+    <WithStyles(ForwardRef(Typography))>
+      Hello World from Home
+    </WithStyles(ForwardRef(Typography))>
+  </Container>
+</Fragment>
+`;
